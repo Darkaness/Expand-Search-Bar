@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expand Search Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <div id="searchbox">
+            <img src="231375_geekpower_demon-logo.png" alt="" id="logo">
+            <input
+            type="text"
+            placeholder="search in darkness">
+            <img src="lupa.png" alt="" id="searchimg">
+        </div>
+    </div>
+    <script>
+        var searchbox = document.getElementById("searchbox");
+        var logo = document.getElementById("logo");
+
+        logo.onclick = function() {
+            searchbox.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
